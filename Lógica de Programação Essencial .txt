@@ -1,0 +1,129 @@
+
+Lógica de Programação Essencial
+
+Entendendo o que é lógica
+
+Programar não é digitar códigos, é resolver problemas.
+Então, lógica de programação é buscar a melhor sequência de ações (algoritmo) para solucionar um problema
+
+Metacognição: pensar como você pensa
+
+Abstração: deixar a solução para um problema mais simples, removendo informações que não são necessárias. Abstração é a habilidade de concentrar nos aspectos essenciais de um contexto qualquer, ignorando características menos importantes ou acidentais
+
+O que são algoritmos e pseudocódigo?
+
+Algoritmo é uma sequência de passos para resolver um problema
+Qualquer programa é uma sequência de passos
+
+https://studio.code.org/ss/mc/stage/1/puzzlee/1
+Ensino de código para iniciantes
+
+Pseudocódigo é uma forma genérica de escrever um algoritmo, utilizando uma linguagem simples (nativa)
+
+https://www.proprofs.com/games/wolf-sheep-and-cabbage/
+
+Aprendendo fluxograma, variáveis e constantes
+
+Fluxograma é uma ferramenta utilizada para representar graficamente um algoritmo, isto é, aa sequência lógica e coerente do fluxo de dados. É a documentação dos passos necessários para a execução de um processo qualquer
+
+Início > Entrada > Processamento > Saída > Fim
+Ex: início > pegar a escova > pegar a pasta de dente > colocar a pasta na escova > … > fim
+
+Variáveis: na programação, uma variável é um objeto (uma posição, frequentemente localizada na memória) capaz de reter e representar um valor ou expressão. É um espaço nas memória do computador destinado a um dado que é alterado durante a execução do algoritmo. Há quatro tipos:
+
+Numéricas
+caracteres
+Alfanuméricas (letras e números)
+Lógicas (verdadeiro ou falso)
+
+Sempre começa por uma letra, nunca número
+Evitar o uso de acento sempre que possível
+
+Constantes: valore imutáveis e não são alterados durante a vida útil do programa
+
+https://www.fllowgorithm.org => programa apenas disponível para windows, funciona ao instalar máquina virtual para instalar sistema operacional
+
+Em números quebrados, usar . não vírgula
+
+Tomadas de decisões e expressões
+
+Expressões aritméticas utilizam operadores aritméticos (+, -, *, /, ˆ, %) e funções aritméticas envolvendo constantes e variáveis
+
+Expressões literais são expressões com constantes e/ou variáveis que têm como resultado valores literais. Iremos utilizar as expressões literais na atribuição de valor para uma variável ou constante
+
+Sempre usar o sinal de = para a variável, que aparece entre aspas
+Em pseudocódigo, pod aparecer uma flecha apontando para a esquerda
+
+Expressões relacionais são compostas por outras expressões ou variáveis numéricas com operadoras racionais (>, >=, <, <=, ==, != ou <> para diferente). Retomam valores lógicos (verdadeiro/falso)
+
+Tomadas de decisão 
+Quando escrevemos programas, geralmente ocorre a necessidade de decidir o que fazer dependendo de alguma condição encontrada durante a execução (60% da programação)
+
+Como utilizar a concatenação
+
+Concatenação é um termo usado em computação parra designar as operações de unir o conteúdo de duas strings (sequência de caracteres). Agrupamento de duas ou mais células que, incluindo fórmulas, textos ou outras informações contidas no seu interior, dá origem a um único resultado
+
+String deve estar entre aspas duplas
+
+& ou . ou + são sinais para indicar o uso de concatenação, varia de acordo com a linguagem que está sendo utilizada
+
+Aprenda como utilizar uma estrutura de repetição
+
+Dentro da lógica de programação, é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador
+
+O que são linguagens de programação?
+
+É uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas (software). Um software pode ser desenvolvido para rodar em um computador, dispositivo móvel ou em qualquer equipamento que permita sua execução.
+
+O que é óbvio para você, certamente não é óbvio para uma máquina. E se você quer que a máquina faça algo por você, você precisa “falar com ela”
+
+A função das linguagens de programação é servir como meio de comunicação entre computadores e humanos
+
+Alto nível: sintaxe se aproxima mais da nossa linguagem e se distancia mais da linguagem de máquina. Ex: C, PHP, JavaScript, C#, C++, Python
+Baixo nível: se aproxima mais da máquina. Para isso, você precisa ter conhecimento direto da arquitetura do computador. Ex: Assembly 
+Compiladas: linguagem de programação em que o código fonte é executado diretamente pelo sistema operacional ou pelo processador após ser traduzido por meio de um processo chamado compilação (C#, VisualBasic, Delphi, C++)
+Interpretadas: linguagem de programação em que o código fonte é executado por um programa de computador chamado interpretador, que em seguida é executado pelo sistema operacional ou processador (JavaScript, PHP, Python)
+
+Software Portugol
+Portugol é uma pseudolinguagem que permite ao leitor desenvolver algoritmos estruturados em português de forma simples e intuitiva, independentemente da linguagem de programação. É uma pseudolinguagem que permite ao programador pensar no problema em si e não no equipamento que irá executar o algoritmo
+
+Download da IDE (ambiente gráfico) do Portugal
+https://github.com/UNIVALI-LITE/Portugol-Studio/releases/
+
+Aprenda a utilizar desvios condicionais e boas práticas em programação
+
+se
+
+É utilizada a palavra reservada se, a condição a ser testada entre parênteses e as instruções que devem ser executadas entre chaves caso o desvio seja verdadeiro
+
+Ex: se (media>=7) {
+		escreva(“Parabéns! Você foi aprovado!”)
+}
+
+cadeia comando para sequência de letras
+“\n” comando para quebra de linha
++ comando para concatenar no Portugol
+// comando para comentário
+
+se-senao
+
+Se a condição for falsa, outro conjunto de comandos deve ser executado
+
+Ex: senao {
+		escreva(“”Infelizmente, você foi reprovado”)
+}
+
+Desvio condicional - caso
+
+Este comando é similar aos comandos se e senao e reduz a complexidade na escolha de diversas opções. Apesar de suas similaridades com o se, há algumas diferenças. Não é possível o uso de operadores lógicos, apenas trabalha com valores definidos
+
+Trabalhando com laços de repetição em Portugol
+
+Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador
+
+
+Aplicação prática com matrizes e vetores
+
+Uma matriz é uma coleção de variáveis do mesmo tipo, acessíveis com um único nome e armazenados contiguamente na memória. A individualização de cada variável de um vetor é feita através do uso de índices. Os vetores são matizes de uma só dimensão
+
+

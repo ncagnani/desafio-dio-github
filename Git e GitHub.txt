@@ -1,0 +1,237 @@
+Introdução ao Git e ao GitHub
+
+Introdução ao Git 
+
+Entendendo o que é Git e sua importância
+Foi criado por Linus Torvalds, nome também por trás do Linux
+
+Software não é feito sozinho, é colaborativo
+
+Git é um software de versionamento de código, que ajuda a criar e monitorar diferentes versões de um código. Já o GitHub é o local para armazenar tudo, um repositório online 
+
+São tecnologias complementares, assim como BitKeeper, CVS, Subversion para Git e BitBucket, GitLab para GitHub
+
+Benefícios:
+Controle de versão
+Armazenamento em nuvem
+Trabalho em equipe
+Melhorias para o código
+Reconhecimento
+
+GitHub também funciona como uma rede social
+
+Navegação via command line interface e instalação
+
+Comandos básicos para um bom desempenho no terminal
+
+GUI x CLI (Command Line Interface)
+
+Mudar de pastas
+Listar as pastas
+Criar pastas/arquivos
+Deletar pastas/arquivos
+
+Windows
+Unix (para Linux e Apple)
+- cd
+- cd
+- dir
+- Is
+- mkdir
+- mkdir
+- del / rmdir
+- rm -rf
+
+
+Windows > cmd > abre o terminal do Windows
+
+Listar 
+dir (Windows)
+ls (ele minúsculo, não i maiúsculo / Linux/Mac)
+
+Entrar, sair e navegar entre as pastas
+cd / ou cd nome da pasta
+cd .. (voltar)
+
+Limpar a tela
+cls (Windows)
+clear ou Command + L (Linux/Mac)
+
+TAB = autocompleted
+Ajuda a completar nomes grandes de pastas
+
+Criar pasta
+mkdir
+Ex: mkdir workspace
+
+cd workspace
+
+echo hello > hello.txt
+
+dir ou ls
+
+del workspace
+
+No Windows, há diferença entre deletar arquivos e deletar repositórios. Então, del se restringe apenas a deleta arquivos
+
+No exemplo, del workspace deletou tudo o que tinha dentro da pasta workspace. Para deletar também a pasta, usar seta para cima para navegar entre os comandos usados (histórico do terminal)
+
+rmdir workspace /S /Q
+
+Agora sim, a pasta e todo o conteúdo foram removidos no Windows. Já no Linux/ Mac, o comando é:
+
+rm -rf workspace
+
+Realizando a instalação do Git
+
+Git 2.33
+https://git-scm.com/
+
+Ao instalar, conferir se os componentes Git Bash e Git GUI estão selecionados. Também manter a recomendação de editor de texto padrão, o VIM
+
+Para o curso, selecionar Let Git Decide, mas para o dia a dia, vale optar por Override the default branch mane for new repositories
+
+Na próxima tela, deixar Git from the command line and also from 3rd-party software
+
+Depois Use bundled OpenSSH / Use the OpenSSL library 
+
+Em quebra de linhas, Checkout Windows-style, commit Unix-style line endings é a opção para o Windows. Já parra o Linux/Mac, escolher Checkout as-is, commit Unix-style line endings
+
+Use MinTTY (the default terminal of MSYS2)
+
+Default (fast-forward or merge)
+
+Git Credential Manager Core
+
+Manter as duas opções marcadas na próxima tela e as duas opções desmarcadas na última, antes da instalação
+
+***
+
+Como instalar no MacOS
+
+Install homebrew 
+No terminal, copiar $ brew install git
+
+
+Primeiros comandos com Git
+
+Iniciando o Git e criando um commit
+
+git init
+git add
+git commit
+
+Todo comando do git leva o nome do programa na frente
+
+Criando um repositório
+
+Usar a pasta workspace que criamos no início das aulas
+
+ls
+
+cd workspace
+
+clear
+
+mkdir livro-receitas
+
+ls
+
+cd livro-receitas
+
+git init
+
+ls
+
+ls -a (flag para visualizar arquivos ocultos)
+
+cd .git
+
+ls
+
+cd ..
+
+clear
+
+git config —global user.email “email”
+
+git config —global user.name nome
+
+***
+
+Adicionando um arquivo
+
+Markdown (.md)
+
+# Título nível 1
+## Título nível 2
+### Título nível 3
+####Título nível 4
+#####Título nível 5
+####### Título nível 6
+
+Criar um arquivo com um editor de texto (instrutor usa Typora) e mudar a extensão para .md
+
+Digitar a receita, usando a quantidade de # de acordo com a formatação do Makdown (# para H1, ## parra H2 e assim por diante)
+
+***
+
+Ciclo de vida dos arquivos no Git
+
+Passo a passo no ciclo de vida
+
+git init serve para criar um repositório
+
+Tracked
+Unmodified
+Modified
+Staged
+
+Untracked
+
+Stage é o local onde ficam os arquivos que estão se preparando para fazer parte de um agrupamento. Os arquivos vão para lá após um commit
+
+Servidor > repositório remoto
+Ambiente de desenvolvimento > 
+
+espaço de trabalho, stage e repositório local
+
+git add			  git commit -m
+
+Ao fazer um commit, o arquivo passa a integrar o repositório local e pode ir para o repositório remoto. Então, o repositório local é formado por commits
+
+***
+
+Introdução ao GitHub
+
+Trabalhando com o GitHub
+
+Criar conta no GitHub
+
+git config —list traz uma lista de todas as configurações do seu Git
+
+git config --global user.name
+
+git config --global user.email
+
+
+Resolvendo conflitos
+
+Como os conflitos aconteceram no GitHub e como resolvê-los 
+
+git pull origin master para tentar fazer o merge quando seu código passa por alterações feitas por você ou outro dev
+
+Abre os dois arquivos, corrige (mantendo a versão mais importante), comita e joga no GitHub
+
+git add
+
+git commit -m “resolve conflitos”
+
+git push origin master
+
+Como baixar um repositório do GitHub para o seu repositório local?
+
+Clicar no botão verde code e baixar como .zip ou copiar o link e colar no terminal para clonar
+
+git clone url do GitHub
+
