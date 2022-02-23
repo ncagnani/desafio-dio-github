@@ -1,3 +1,0 @@
-Orientações Git
-
-Teste de inclusão de arquivo da minha máquina para o GitHub
